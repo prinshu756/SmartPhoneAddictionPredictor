@@ -2,8 +2,8 @@
     "workbench.colorCustomizations": {
         "editor.lineHighlightBorder": "#7DCFFF20",
         "editorCursor.foreground": "#7DCFFF",
-        "tab.activeBorder": "#7DCFFF",
-        "tab.activeBorderTop": "#7DCFFF",
+        "tab.activeBorder": "#7DCFFF25",
+        "tab.activeBorderTop": "#7DCFFF25",
         "tab.activeBackground": "#121A2C",
         "tab.activeForeground": "#A0E9FF",
         "statusBar.background": "#121A2C",
