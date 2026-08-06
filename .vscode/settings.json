@@ -2,15 +2,15 @@
     "workbench.colorCustomizations": {
         "editor.lineHighlightBorder": "#7DCFFF20",
         "editorCursor.foreground": "#7DCFFF",
-        "tab.activeBorder": "#7DCFFF25",
         "tab.activeBorderTop": "#7DCFFF25",
-        "tab.activeBackground": "#121A2C",
         "tab.activeForeground": "#A0E9FF",
-        "statusBar.background": "#121A2C",
-        "statusBar.foreground": "#7DCFFF",
         "editorIndentGuide.activeBackground1": "#7DCFFF28",
         "editor.selectionBackground": "#7DCFFF22",
         "editorBracketHighlight.foreground1": "#7DCFFF",
-        "editorBracketHighlight.foreground2": "#A0E9FF"
+        "editorBracketHighlight.foreground2": "#A0E9FF",
+        "tab.activeBorder": "#7DCFFF25",
+        "tab.activeBackground": "#121A2C",
+        "statusBar.background": "#121A2C",
+        "statusBar.foreground": "#7DCFFF"
     }
 }

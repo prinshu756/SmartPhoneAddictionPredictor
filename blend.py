@@ -14,7 +14,7 @@ TARGET = "addicted_label"
 train_df = pd.read_csv("datasets/train.csv")
 y = train_df[TARGET].astype(int).values
 
-names = ["LightGBM", "XGBoost", "HistGB"]
+names = ["LightGBM", "LightGBMDeep", "XGBoost", "HistGB"]
 oofs = []
 tests = []
 for name in names:
@@ -49,10 +49,10 @@ def neg_auc(weights):
 
 
 results = []
-for seed in range(5):
+for seed in range(2):
     x0 = np.random.RandomState(seed).dirichlet(np.ones(n))
     res = minimize(neg_auc, x0, method="Nelder-Mead",
-                   options={"maxiter": 2000, "xatol": 1e-8, "fatol": 1e-8})
+                   options={"maxiter": 400, "xatol": 1e-6, "fatol": 1e-7})
     w = np.abs(res.x)
     w = w / w.sum()
     auc = roc_auc_score(y, (oof_matrix * w[:, None]).sum(axis=0))

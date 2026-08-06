@@ -144,7 +144,6 @@ def train_with_cv(model_builder, X_data, y_data, X_test_data, model_name, use_ca
                 model.fit(
                     X_tr, y_tr,
                     eval_set=[(X_va, y_va)],
-                    early_stopping_rounds=200,
                     verbose=False,
                 )
         else:
@@ -229,6 +228,7 @@ def build_xgboost(fold):
     return XGBClassifier(
         objective="binary:logistic",
         eval_metric="auc",
+        early_stopping_rounds=200,
         n_estimators=8000,
         learning_rate=0.02,
         max_depth=6,
